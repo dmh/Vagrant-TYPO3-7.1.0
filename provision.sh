@@ -46,7 +46,7 @@ debconf-set-selections <<< "mysql-server mysql-server/root_password password 123
 debconf-set-selections <<< "mysql-server mysql-server/root_password_again password 1234"
 apt-get -y install mysql-server > /dev/null 2>&1
 
-Create MySQL DB for TYPO3
+# Create MySQL DB for TYPO3
 echo -e "Creating TYPO3 DB & VirtualHost... \r92% "
 echo "CREATE DATABASE typo3" | mysql -uroot -p1234
 mysql -uroot -p1234 typo3 < /var/www/typo3db/typo3db.sql
