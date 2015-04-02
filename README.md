@@ -1,0 +1,3 @@
+## Vagrant VM for TYPO3 7.1.0 (Blank)
+
+to be continued...
