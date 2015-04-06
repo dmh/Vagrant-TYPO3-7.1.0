@@ -1,9 +1,9 @@
 #Vagrant TYPO3 7.1.0
 
 ###What is it?
-Package to quick deploy blank TYPO3 7.1.0 on virtual machine.
-Vagrant config + Shell Provisioner + Bower components
-With Bower we download TYPO3 core and DB.
+Package to quick deploy blank **TYPO3** 7.1.0 on virtual machine.
+
+**Vagrant** config + **Shell** Provisioner + **Bower** components
 
 ### Requirements
 
@@ -22,12 +22,15 @@ vagrant up
 ```
 
 To stop Vagrant VM: `vagrant destroy`
+
 Status:  `vagrant status`
+
 Open SSH session: `vagrant ssh`
 
 ### Connecting
 
 Apache server is available at http://192.168.33.34
+
 Web root: `/var/www/public/`
 
 MySQL
@@ -58,4 +61,5 @@ Don't forget to change __ip__ address for your virtual machine, if you have seve
 `config.vm.network "private_network", ip: "your new IP"`
 
 Also you can change name of VM:
+
 `config.vm.define "VM name" do |typo3|`
