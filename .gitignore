@@ -9,3 +9,5 @@ html
 *.sql
 typo3db
 typo3
+!public/typo3
+
