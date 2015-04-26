@@ -7,8 +7,8 @@ Vagrant.configure("2") do |config|
     config.vm.box = "ubuntu/trusty64"
     config.vm.box_check_update = false
 
-    #Private Network / Static IP = 192.168.33.34
-    config.vm.network "private_network", ip: "192.168.33.34"
+    #Private Network / Static IP = 192.168.33.171 / ip -.171 for TYPO3 7.1
+    config.vm.network "private_network", ip: "192.168.33.171"
     config.vm.synced_folder ".", "/var/www", type: "nfs"
 
     #Public network / commented
